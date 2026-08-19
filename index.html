@@ -4,192 +4,612 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biophilic Studio | karmyog VĀTIKA — Downtown Mall, New Town</title>
-  <meta name="description" content="Biophilic Studio on rent at Shop 127, Downtown Mall, New Town, Kolkata. Podcasts, meetings & content creation from ₹1,000/hour. Book: +91 91472 46587.">
+  <meta name="description" content="Rent Biophilic Studio at Shop 127, Downtown Mall, New Town, Kolkata. Podcasts, meetings & content creation from ₹1,000/hour. Gear & living sets included. Book: +91 91472 46587.">
+  <meta name="keywords" content="Biophilic Studio, Kolkata, New Town, Downtown Mall, podcast studio rental, content studio, karmyog Vatika, meeting room Kolkata">
+  <meta name="author" content="karmyog Vātika">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://biophilic-studio.vercel.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Biophilic Studio">
+  <meta property="og:url" content="https://biophilic-studio.vercel.app/">
+  <meta property="og:title" content="Biophilic Studio | karmyog VĀTIKA — Downtown Mall, New Town">
+  <meta property="og:description" content="A nature-soaked room for podcasts, meetings & creation. From ₹1,000/hour at Downtown Mall, New Town, Kolkata.">
+  <meta property="og:image" content="https://biophilic-studio.vercel.app/images/gallery-01-lounge.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1600">
+  <meta property="og:image:alt" content="Biophilic Studio podcast lounge with sofas and living greens">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Biophilic Studio | karmyog VĀTIKA">
+  <meta name="twitter:description" content="Podcasts, meetings & content creation from ₹1,000/hour. Downtown Mall, New Town, Kolkata.">
+  <meta name="twitter:image" content="https://biophilic-studio.vercel.app/images/gallery-01-lounge.png">
+
   <link rel="icon" type="image/png" href="images/logo-karmyog-vatika.png">
+  <link rel="apple-touch-icon" href="images/logo-karmyog-vatika.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/ux-fixes.css">
+  <link rel="stylesheet" href="css/design-v2.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://biophilic-studio.vercel.app/#business",
+    "name": "Biophilic Studio",
+    "alternateName": "karmyog Vātika Biophilic Studio",
+    "description": "Nature-soaked studio rental for podcasts, meetings and content creation at Downtown Mall, New Town, Kolkata.",
+    "url": "https://biophilic-studio.vercel.app/",
+    "image": [
+      "https://biophilic-studio.vercel.app/images/gallery-01-lounge.png",
+      "https://biophilic-studio.vercel.app/images/gallery-06-plant-wall.png"
+    ],
+    "logo": "https://biophilic-studio.vercel.app/images/logo-karmyog-vatika.png",
+    "telephone": "+919147246587",
+    "email": "connect@ky21c.org",
+    "priceRange": "₹₹",
+    "currenciesAccepted": "INR",
+    "paymentAccepted": "Cash, UPI, Bank Transfer",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "08:30",
+      "closes": "19:00"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No. 127, Downtown Mall, Uniworld City Commercial Complex",
+      "addressLocality": "New Town",
+      "addressRegion": "West Bengal",
+      "postalCode": "700156",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 22.6226,
+      "longitude": 88.4501
+    },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=Downtown+Mall+Newtown+Kolkata",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "karmyog Vātika",
+      "url": "https://www.vatika.ai/"
+    },
+    "sameAs": [
+      "https://www.vatika.ai/",
+      "https://wa.me/919147246587"
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "name": "Hourly studio rental",
+        "price": "1000",
+        "priceCurrency": "INR"
+      },
+      {
+        "@type": "Offer",
+        "name": "4-hour studio package",
+        "price": "3500",
+        "priceCurrency": "INR"
+      },
+      {
+        "@type": "Offer",
+        "name": "6-hour studio package",
+        "price": "5000",
+        "priceCurrency": "INR"
+      },
+      {
+        "@type": "Offer",
+        "name": "Full-day 8.5-hour studio package",
+        "price": "7000",
+        "priceCurrency": "INR"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <div class="page-bg" aria-hidden="true"></div>
-  <div class="page-scrim" aria-hidden="true"></div>
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-sm focus:bg-gold focus:px-4 focus:py-2 focus:text-forest-deep">
+    Skip to content
+  </a>
 
-  <div class="site">
-    <nav>
-      <a class="brand" href="#top">
-        <img src="images/logo-karmyog-vatika.png" alt="karmyog Vātika" width="44" height="44">
-        <span>Biophilic Studio</span>
-      </a>
-      <div class="nav-links">
-        <a class="navlink" href="#rates">Rates</a>
-        <a class="navlink" href="#studio">Studio</a>
-        <a class="navlink" href="#gallery">Gallery</a>
-        <a class="navlink" href="#book">Book</a>
-      </div>
-    </nav>
+  <div class="pointer-events-none fixed inset-0 z-0" aria-hidden="true">
+    <div class="page-bg absolute inset-0"></div>
+    <div class="page-scrim-main absolute inset-0"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_78%_30%,rgba(196,138,58,0.10),transparent_55%)]"></div>
+  </div>
 
-    <header class="hero" id="top">
-      <div class="hero-panel reveal">
-        <img class="hero-logo" src="images/logo-karmyog-vatika.png" alt="karmyog Vātika — clubs for lifelong learning">
-        <p class="brand-line">karmyog <span>VĀTIKA</span></p>
-        <h1>Biophilic Studio</h1>
-        <p class="hero-support">A nature-soaked room for podcasts, meetings &amp; creation — Downtown Mall, New Town.</p>
-        <div class="hero-cta">
-          <a class="btn btn-gold" href="https://wa.me/919147246587" target="_blank" rel="noopener">WhatsApp to book</a>
-          <a class="btn btn-ghost" href="tel:+919147246587">+91 91472 46587</a>
+  <div class="relative z-10">
+    <!-- NAV -->
+    <header class="site-header fixed inset-x-0 top-0 z-50 border-b border-gold/30 bg-forest-deep/80 backdrop-blur-md">
+      <nav class="wrap flex items-center justify-between gap-4 px-5 py-3 sm:px-8" aria-label="Primary">
+        <a href="#top" class="brand flex min-w-0 items-center gap-2.5 font-display text-lg font-bold text-cream">
+          <img src="images/logo-karmyog-vatika.png" alt="karmyog Vātika" width="40" height="40" class="h-10 w-10 shrink-0 rounded-sm object-contain">
+          <span data-i18n="brand">Biophilic Studio</span>
+        </a>
+        <div class="flex items-center gap-2">
+          <div class="lang-toggle" role="group" aria-label="Language">
+            <button type="button" id="lang-en" aria-pressed="true" data-lang="en">EN</button>
+            <button type="button" id="lang-bn" aria-pressed="false" data-lang="bn">বাং</button>
+          </div>
+          <button type="button" id="nav-toggle" class="inline-flex items-center justify-center rounded-sm border border-gold/35 px-3 py-2 text-cream md:hidden" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+            <span class="text-sm font-semibold tracking-wide" data-i18n="menu">Menu</span>
+          </button>
         </div>
-      </div>
+        <div id="nav-menu" class="absolute left-0 right-0 top-full hidden flex-col gap-1 border-b border-gold/30 bg-forest-deep/95 px-5 py-4 backdrop-blur-md md:static md:flex md:flex-row md:items-center md:gap-6 md:border-0 md:bg-transparent md:p-0">
+          <a class="nav-link py-2 md:py-0" href="#about" data-i18n="nav_about">About</a>
+          <a class="nav-link py-2 md:py-0" href="#services" data-i18n="nav_services">Services</a>
+          <a class="nav-link py-2 md:py-0" href="#rates" data-i18n="nav_rates">Rates</a>
+          <a class="nav-link py-2 md:py-0" href="#gallery" data-i18n="nav_gallery">Gallery</a>
+          <a class="nav-link py-2 md:py-0" href="#faq" data-i18n="nav_faq">FAQ</a>
+          <a class="nav-link py-2 md:py-0" href="#contact" data-i18n="nav_contact">Contact</a>
+          <a class="btn btn-primary ml-0 mt-2 md:ml-2 md:mt-0" href="#contact" data-i18n="nav_book">Book Free Consultation</a>
+        </div>
+      </nav>
     </header>
 
-    <main>
-      <section class="section" id="rates">
-        <div class="wrap">
-          <div class="panel reveal">
-            <p class="eyebrow">On rent</p>
-            <h2>Simple hourly packages</h2>
-            <p class="lede">Open <strong>8:30 AM – 7:00 PM</strong>. Gear &amp; biophilic sets included.</p>
-            <div class="rates">
-              <div class="rate">
-                <span class="rate-price">₹1,000</span>
-                <span class="rate-unit">/ hour</span>
-              </div>
-              <div class="rate">
-                <span class="rate-price">₹3,500</span>
-                <span class="rate-unit">/ 4 hours</span>
-              </div>
-              <div class="rate">
-                <span class="rate-price">₹5,000</span>
-                <span class="rate-unit">/ 6 hours</span>
-              </div>
-              <div class="rate featured">
-                <span class="rate-price">₹7,000</span>
-                <span class="rate-unit">/ 8.5 hours</span>
-              </div>
+    <main id="main">
+      <!-- HERO -->
+      <section id="top" class="hero-section relative flex" aria-labelledby="hero-heading">
+        <div class="wrap w-full px-5 sm:px-8">
+          <div class="hero-text-safe reveal">
+            <img src="images/logo-karmyog-vatika.png" alt="karmyog Vātika — clubs for lifelong learning" width="72" height="72" class="mb-4 h-[64px] w-[64px] object-contain sm:mb-5 sm:h-[72px] sm:w-[72px]" fetchpriority="high">
+            <p class="hero-brand-line font-display text-xl tracking-[0.12em] text-gold-bright sm:text-2xl">
+              karmyog <span class="text-cream">VĀTIKA</span>
+            </p>
+            <h1 id="hero-heading" class="hero-heading text-balance text-cream">
+              <span data-i18n="hero_title">Biophilic Studio</span>
+            </h1>
+            <p class="hero-support text-base text-mist/90 sm:text-lg" data-i18n="hero_support">
+              A nature-soaked room for podcasts, meetings &amp; creation — Downtown Mall, New Town.
+            </p>
+            <div class="hero-cta flex flex-wrap">
+              <a class="btn btn-primary" href="#contact" data-i18n="cta_start">Get Started</a>
+              <a class="btn btn-secondary" href="https://wa.me/919147246587?text=Hi%2C%20I%27d%20like%20to%20book%20Biophilic%20Studio" target="_blank" rel="noopener noreferrer" data-i18n="cta_contact">Contact Us</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="studio">
+      <!-- ABOUT -->
+      <section id="about" class="section-pad" aria-labelledby="about-heading">
+        <div class="wrap">
+          <div class="panel reveal grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div>
+              <p class="eyebrow" data-i18n="about_eyebrow">About us</p>
+              <h2 id="about-heading" class="text-3xl sm:text-4xl lg:text-[2.75rem]" data-i18n="about_title">A calm, camera-ready room inside Vātika</h2>
+              <p class="lede" data-i18n="about_lede">
+                Biophilic Studio is karmyog Vātika’s rentable creative space at Shop No. 127, Downtown Mall.
+                Warm light, living greens, and production gear come together so hosts, teams, and creators can work without scrambling for a set.
+              </p>
+              <p class="mt-4 max-w-2xl text-mist/75">
+                Built under the same biophilic craft that shaped Rosedale Plaza, Downtown Mall’s planter studio, and C2 Uniworld — fifteen years of putting nature back into spaces people actually use.
+              </p>
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a class="btn btn-primary" href="#contact">Book Free Consultation</a>
+                <a class="btn btn-secondary" href="#services">Our Services</a>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-md border border-gold/25">
+              <img src="images/gallery-06-plant-wall.png" alt="Beige sofa facing the biophilic plant wall inside the studio" width="800" height="1000" class="h-full w-full object-cover" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="section-pad pt-0" aria-labelledby="services-heading">
         <div class="wrap">
           <div class="panel reveal">
-            <p class="eyebrow">Built for</p>
-            <h2>Podcasts · meetings · content</h2>
-            <p class="lede">Creators, teams, interviewers &amp; workshop hosts — one calm, camera-ready space.</p>
-            <div class="use-grid">
-              <article>
-                <h3>For podcasts</h3>
-                <ul>
+            <p class="eyebrow" data-i18n="services_eyebrow">Our services</p>
+            <h2 id="services-heading" class="text-3xl sm:text-4xl" data-i18n="services_title">Podcasts · meetings · content</h2>
+            <p class="lede" data-i18n="services_lede">Creators, teams, interviewers &amp; workshop hosts — one calm space with gear included.</p>
+            <div class="mt-10 grid gap-6 md:grid-cols-3">
+              <article class="border-t border-gold/30 pt-5">
+                <h3 class="text-2xl">For podcasts</h3>
+                <ul class="mt-4 space-y-2 text-sm text-mist/80">
                   <li>Professional condenser mics</li>
                   <li>Multi-channel audio mixer</li>
                   <li>Acoustic treatments</li>
                 </ul>
               </article>
-              <article>
-                <h3>For official meetings</h3>
-                <ul>
+              <article class="border-t border-gold/30 pt-5">
+                <h3 class="text-2xl">For official meetings</h3>
+                <ul class="mt-4 space-y-2 text-sm text-mist/80">
                   <li>High-speed Wi-Fi</li>
                   <li>Wireless presentation screen</li>
                   <li>Comfortable breakout seating</li>
                 </ul>
               </article>
-              <article>
-                <h3>For content creation</h3>
-                <ul>
+              <article class="border-t border-gold/30 pt-5">
+                <h3 class="text-2xl">For content creation</h3>
+                <ul class="mt-4 space-y-2 text-sm text-mist/80">
                   <li>Pro video camera &amp; lights</li>
                   <li>Interchangeable backdrops</li>
                   <li>Vibrant biophilic sets</li>
                 </ul>
               </article>
             </div>
-            <p class="also">Also suited for interviews, workshops &amp; creator collaborations.</p>
+            <p class="mt-8 text-sm text-mist/70">Also suited for interviews, workshops &amp; creator collaborations.</p>
           </div>
         </div>
       </section>
 
-      <section class="section" id="gallery">
+      <!-- RATES (pricing as part of services/conversion) -->
+      <section id="rates" class="section-pad pt-0" aria-labelledby="rates-heading">
         <div class="wrap">
-          <div class="panel panel-wide reveal">
+          <div class="panel reveal">
+            <p class="eyebrow">On rent</p>
+            <h2 id="rates-heading" class="text-3xl sm:text-4xl">Simple hourly packages</h2>
+            <p class="lede">Open <strong class="text-cream">8:30 AM – 7:00 PM</strong>. Gear &amp; biophilic sets included.</p>
+            <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="rounded-sm border border-gold/25 bg-forest/40 px-5 py-6 text-center">
+                <p class="font-display text-4xl text-gold-bright">₹1,000</p>
+                <p class="mt-1 text-sm text-mist/70">/ hour</p>
+              </div>
+              <div class="rounded-sm border border-gold/25 bg-forest/40 px-5 py-6 text-center">
+                <p class="font-display text-4xl text-gold-bright">₹3,500</p>
+                <p class="mt-1 text-sm text-mist/70">/ 4 hours</p>
+              </div>
+              <div class="rounded-sm border border-gold/25 bg-forest/40 px-5 py-6 text-center">
+                <p class="font-display text-4xl text-gold-bright">₹5,000</p>
+                <p class="mt-1 text-sm text-mist/70">/ 6 hours</p>
+              </div>
+              <div class="rounded-sm border border-gold bg-gradient-to-br from-gold/20 to-amber/10 px-5 py-6 text-center">
+                <p class="font-display text-4xl text-gold-bright">₹7,000</p>
+                <p class="mt-1 text-sm text-mist/70">/ 8.5 hours</p>
+              </div>
+            </div>
+            <div class="mt-8">
+              <a class="btn btn-primary" href="#contact">Fill Enquiry Form</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US -->
+      <section id="why" class="section-pad pt-0" aria-labelledby="why-heading">
+        <div class="wrap">
+          <div class="panel reveal">
+            <p class="eyebrow">Why choose us</p>
+            <h2 id="why-heading" class="text-3xl sm:text-4xl">Ready to shoot. Easy to book.</h2>
+            <p class="lede">No kit haul, no sterile conference room — a living set with production basics already in place.</p>
+            <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              <div>
+                <h3 class="text-xl">Gear included</h3>
+                <p class="mt-2 text-sm leading-relaxed text-mist/75">Mics, mixer, cameras, lights, and presentation screen — so you focus on the conversation.</p>
+              </div>
+              <div>
+                <h3 class="text-xl">Biophilic sets</h3>
+                <p class="mt-2 text-sm leading-relaxed text-mist/75">Plant walls, warm timber, and lattice light that look premium on camera without a stylist day.</p>
+              </div>
+              <div>
+                <h3 class="text-xl">Prime New Town location</h3>
+                <p class="mt-2 text-sm leading-relaxed text-mist/75">Shop 127 inside Downtown Mall — simple to find, park, and host guests.</p>
+              </div>
+              <div>
+                <h3 class="text-xl">Transparent packages</h3>
+                <p class="mt-2 text-sm leading-relaxed text-mist/75">Clear hourly and block rates from ₹1,000 — book by WhatsApp or enquiry form.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section id="process" class="section-pad pt-0" aria-labelledby="process-heading">
+        <div class="wrap">
+          <div class="panel reveal">
+            <p class="eyebrow">How we work</p>
+            <h2 id="process-heading" class="text-3xl sm:text-4xl">From enquiry to wrap</h2>
+            <p class="lede">Four clear steps. No long onboarding — just a confirmed slot and a ready room.</p>
+            <ol class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <li class="border-l border-gold/40 pl-4">
+                <p class="font-display text-3xl text-gold-bright">01</p>
+                <h3 class="mt-2 text-xl">Send an enquiry</h3>
+                <p class="mt-2 text-sm text-mist/75">Share date, duration, and what you’re recording or hosting.</p>
+              </li>
+              <li class="border-l border-gold/40 pl-4">
+                <p class="font-display text-3xl text-gold-bright">02</p>
+                <h3 class="mt-2 text-xl">Confirm your slot</h3>
+                <p class="mt-2 text-sm text-mist/75">We lock availability and package — usually the same day.</p>
+              </li>
+              <li class="border-l border-gold/40 pl-4">
+                <p class="font-display text-3xl text-gold-bright">03</p>
+                <h3 class="mt-2 text-xl">Arrive &amp; create</h3>
+                <p class="mt-2 text-sm text-mist/75">Walk into a lit, miked, biophilic set. Start when you’re ready.</p>
+              </li>
+              <li class="border-l border-gold/40 pl-4">
+                <p class="font-display text-3xl text-gold-bright">04</p>
+                <h3 class="mt-2 text-xl">Optional greenery</h3>
+                <p class="mt-2 text-sm text-mist/75">Ask about Office Greenery Project installs starting at ₹10,000.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFITS -->
+      <section id="benefits" class="section-pad pt-0" aria-labelledby="benefits-heading">
+        <div class="wrap">
+          <div class="panel reveal grid gap-8 lg:grid-cols-2 lg:items-center">
+            <div>
+              <p class="eyebrow">Benefits</p>
+              <h2 id="benefits-heading" class="text-3xl sm:text-4xl">Why teams keep coming back</h2>
+              <ul class="mt-8 space-y-4 text-mist/80">
+                <li class="flex gap-3"><span class="mt-1 text-gold-bright" aria-hidden="true">✓</span><span><strong class="text-cream">Faster setup</strong> — room and kit are already staged for conversation and camera.</span></li>
+                <li class="flex gap-3"><span class="mt-1 text-gold-bright" aria-hidden="true">✓</span><span><strong class="text-cream">Better on-screen presence</strong> — living plants and warm light instead of blank walls.</span></li>
+                <li class="flex gap-3"><span class="mt-1 text-gold-bright" aria-hidden="true">✓</span><span><strong class="text-cream">Flexible blocks</strong> — book an hour or a full 8.5-hour day.</span></li>
+                <li class="flex gap-3"><span class="mt-1 text-gold-bright" aria-hidden="true">✓</span><span><strong class="text-cream">One brand ecosystem</strong> — studio today, workplace greenery next from the same Vātika team.</span></li>
+              </ul>
+              <div class="mt-8">
+                <a class="btn btn-primary" href="#contact">Get Started</a>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-md border border-gold/25">
+              <img src="images/gallery-03-cameras.png" alt="Professional Sony cameras on tripods ready for content shoots" width="800" height="1000" class="w-full object-cover" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="section-pad pt-0" aria-labelledby="gallery-heading">
+        <div class="wrap">
+          <div class="panel reveal">
             <p class="eyebrow">Inside the studio</p>
-            <h2>Warm light, living greens</h2>
-            <div class="gallery">
-              <button type="button" class="g-item tall" data-full="images/gallery-01-lounge.png" aria-label="Open lounge photo">
-                <img src="images/gallery-01-lounge.png" alt="Podcast lounge with sofas, wicker chairs and pendant lights" loading="lazy">
+            <h2 id="gallery-heading" class="text-3xl sm:text-4xl">Warm light, living greens</h2>
+            <div class="mt-8 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
+              <button type="button" class="g-item group col-span-2 overflow-hidden rounded-sm border border-gold/20 md:row-span-2" data-full="images/gallery-01-lounge.png" aria-label="Open lounge photo">
+                <img src="images/gallery-01-lounge.png" alt="Podcast lounge with sofas, wicker chairs and pendant lights" width="800" height="1000" class="h-full min-h-[220px] w-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy">
               </button>
-              <button type="button" class="g-item tall" data-full="images/gallery-02-sofa-wall.png" aria-label="Open plant wall photo">
-                <img src="images/gallery-02-sofa-wall.png" alt="Sofa against backlit plant wall" loading="lazy">
+              <button type="button" class="g-item group overflow-hidden rounded-sm border border-gold/20" data-full="images/gallery-02-sofa-wall.png" aria-label="Open plant wall photo">
+                <img src="images/gallery-02-sofa-wall.png" alt="Sofa against backlit plant wall" width="600" height="800" class="aspect-[3/4] w-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy">
               </button>
-              <button type="button" class="g-item tall" data-full="images/gallery-03-cameras.png" aria-label="Open camera gear photo">
-                <img src="images/gallery-03-cameras.png" alt="Professional Sony cameras on tripods" loading="lazy">
+              <button type="button" class="g-item group overflow-hidden rounded-sm border border-gold/20" data-full="images/gallery-03-cameras.png" aria-label="Open camera gear photo">
+                <img src="images/gallery-03-cameras.png" alt="Professional Sony cameras on tripods" width="600" height="800" class="aspect-[3/4] w-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy">
               </button>
-              <button type="button" class="g-item tall" data-full="images/gallery-04-wicker-stairs.png" aria-label="Open wicker and stairs photo">
-                <img src="images/gallery-04-wicker-stairs.png" alt="Wicker stools, gold trim and wooden stairs" loading="lazy">
+              <button type="button" class="g-item group overflow-hidden rounded-sm border border-gold/20" data-full="images/gallery-04-wicker-stairs.png" aria-label="Open wicker and stairs photo">
+                <img src="images/gallery-04-wicker-stairs.png" alt="Wicker stools, gold trim and wooden stairs" width="600" height="800" class="aspect-[3/4] w-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy">
               </button>
-              <button type="button" class="g-item tall" data-full="images/gallery-05-lounge-overhead.png" aria-label="Open overhead lounge photo">
-                <img src="images/gallery-05-lounge-overhead.png" alt="Overhead view of the conversation set" loading="lazy">
+              <button type="button" class="g-item group overflow-hidden rounded-sm border border-gold/20" data-full="images/gallery-05-lounge-overhead.png" aria-label="Open overhead lounge photo">
+                <img src="images/gallery-05-lounge-overhead.png" alt="Overhead view of the conversation set" width="600" height="800" class="aspect-[3/4] w-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy">
               </button>
-              <button type="button" class="g-item tall" data-full="images/gallery-06-plant-wall.png" aria-label="Open seating photo">
-                <img src="images/gallery-06-plant-wall.png" alt="Beige sofa facing the biophilic plant wall" loading="lazy">
+              <button type="button" class="g-item group overflow-hidden rounded-sm border border-gold/20" data-full="images/gallery-06-plant-wall.png" aria-label="Open seating photo">
+                <img src="images/gallery-06-plant-wall.png" alt="Beige sofa facing the biophilic plant wall" width="600" height="800" class="aspect-[3/4] w-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy">
               </button>
-              <button type="button" class="g-item tall" data-full="images/gallery-07-lattice.png" aria-label="Open lattice room photo">
-                <img src="images/gallery-07-lattice.png" alt="Lattice walls and warm pendant lighting" loading="lazy">
+              <button type="button" class="g-item group overflow-hidden rounded-sm border border-gold/20" data-full="images/gallery-07-lattice.png" aria-label="Open lattice room photo">
+                <img src="images/gallery-07-lattice.png" alt="Lattice walls and warm pendant lighting" width="600" height="800" class="aspect-[3/4] w-full object-cover transition duration-500 group-hover:scale-[1.03]" loading="lazy">
               </button>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="greenery">
+      <!-- OFFICE GREENERY -->
+      <section id="greenery" class="section-pad pt-0" aria-labelledby="greenery-heading">
         <div class="wrap">
-          <div class="panel panel-secondary reveal">
-            <div class="secondary-row">
+          <div class="panel reveal">
+            <div class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
               <div>
                 <p class="eyebrow">Also from Vātika</p>
-                <h2>Office Greenery Project</h2>
-                <p class="lede">Bring living plants into your workplace. Starting at <strong class="gold">₹10,000</strong>.</p>
+                <h2 id="greenery-heading" class="text-3xl sm:text-4xl">Office Greenery Project</h2>
+                <p class="lede">Bring living plants into your workplace. Starting at <strong class="text-gold-bright">₹10,000</strong>.</p>
+                <div class="mt-6">
+                  <a class="btn btn-primary" href="#contact">Enquire today</a>
+                </div>
               </div>
-              <img class="secondary-img" src="images/banner-c-greenery.png" alt="Office Greenery Project promo" loading="lazy">
+              <img src="images/banner-c-greenery.png" alt="Office Greenery Project promotional banner" width="420" height="280" class="w-full max-w-md rounded-md border border-gold/25 object-cover lg:w-80" loading="lazy">
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="book">
+      <!-- TRUST / TESTIMONIALS (credentials — no fabricated customer quotes) -->
+      <section id="testimonials" class="section-pad pt-0" aria-labelledby="testimonials-heading">
         <div class="wrap">
-          <div class="panel panel-book reveal">
-            <p class="eyebrow">Book now · Enquire today</p>
-            <h2>Reserve your slot</h2>
-            <p class="lede">Shop No. 127, Downtown Mall, New Town, Kolkata, West Bengal</p>
-            <p class="hours">Hours: <strong>8:30 AM – 7:00 PM</strong></p>
-            <div class="hero-cta">
-              <a class="btn btn-gold" href="https://wa.me/919147246587?text=Hi%2C%20I%27d%20like%20to%20book%20Biophilic%20Studio" target="_blank" rel="noopener">WhatsApp +91 91472 46587</a>
-              <a class="btn btn-ghost" href="tel:+919147246587">Call now</a>
+          <div class="panel reveal">
+            <p class="eyebrow">Trust</p>
+            <h2 id="testimonials-heading" class="text-3xl sm:text-4xl">Credentials, proven on the ground</h2>
+            <p class="lede">Biophilic Studio sits inside karmyog Vātika’s New Town practice — the same craft behind landmark biophilic builds.</p>
+            <blockquote class="mt-8 border-l-2 border-gold pl-5 font-display text-2xl italic leading-snug text-cream sm:text-3xl">
+              Every space, every home, every workplace can become a vatika — a living garden that nurtures both people and planet.
+            </blockquote>
+            <p class="mt-3 text-sm text-mist/65">— Mission Biophilia, karmyog Vātika</p>
+            <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="rounded-sm border border-gold/25 bg-forest/35 px-4 py-5">
+                <p class="font-display text-3xl text-gold-bright">15 Years</p>
+                <p class="mt-1 text-sm text-mist/70">On the ground in Newtown</p>
+              </div>
+              <div class="rounded-sm border border-gold/25 bg-forest/35 px-4 py-5">
+                <p class="font-display text-3xl text-gold-bright">Green City</p>
+                <p class="mt-1 text-sm text-mist/70">Certification partner roots</p>
+              </div>
+              <div class="rounded-sm border border-gold/25 bg-forest/35 px-4 py-5">
+                <p class="font-display text-3xl text-gold-bright">4,000 sq ft</p>
+                <p class="mt-1 text-sm text-mist/70">Rosedale Plaza experience</p>
+              </div>
+              <div class="rounded-sm border border-gold/25 bg-forest/35 px-4 py-5">
+                <p class="font-display text-3xl text-gold-bright">3.2M</p>
+                <p class="mt-1 text-sm text-mist/70">Views of our craft work</p>
+              </div>
             </div>
-            <p class="map-hint">
-              <a href="https://www.google.com/maps/search/?api=1&amp;query=Downtown+Mall+Newtown+Kolkata" target="_blank" rel="noopener">Find Downtown Mall on Maps →</a>
+            <p class="mt-6 text-sm text-mist/65">Flagship references: Rosedale Plaza · Downtown Mall · C2 Uniworld · IIT Kharagpur Research Park</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section-pad pt-0" aria-labelledby="faq-heading">
+        <div class="wrap">
+          <div class="panel reveal">
+            <p class="eyebrow">FAQ</p>
+            <h2 id="faq-heading" class="text-3xl sm:text-4xl">Before you book</h2>
+            <div class="mt-8 divide-y divide-gold/25" itemscope itemtype="https://schema.org/FAQPage">
+              <details class="group py-4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" open>
+                <summary class="cursor-pointer list-none font-display text-xl text-cream marker:content-none [&::-webkit-details-marker]:hidden" itemprop="name">
+                  <span class="flex items-center justify-between gap-4">What is included in the rental?<span class="text-gold transition group-open:rotate-45" aria-hidden="true">+</span></span>
+                </summary>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <p class="mt-3 text-sm leading-relaxed text-mist/75" itemprop="text">Studio room access plus biophilic sets and core gear — condenser mics, mixer, acoustic treatments, Wi-Fi, presentation screen, cameras and lights depending on your package needs. Confirm specifics when you enquire.</p>
+                </div>
+              </details>
+              <details class="group py-4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <summary class="cursor-pointer list-none font-display text-xl text-cream marker:content-none [&::-webkit-details-marker]:hidden" itemprop="name">
+                  <span class="flex items-center justify-between gap-4">What are your hours?<span class="text-gold transition group-open:rotate-45" aria-hidden="true">+</span></span>
+                </summary>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <p class="mt-3 text-sm leading-relaxed text-mist/75" itemprop="text">Open 8:30 AM – 7:00 PM. Share preferred dates early for weekends and long shoots.</p>
+                </div>
+              </details>
+              <details class="group py-4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <summary class="cursor-pointer list-none font-display text-xl text-cream marker:content-none [&::-webkit-details-marker]:hidden" itemprop="name">
+                  <span class="flex items-center justify-between gap-4">How do I book?<span class="text-gold transition group-open:rotate-45" aria-hidden="true">+</span></span>
+                </summary>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <p class="mt-3 text-sm leading-relaxed text-mist/75" itemprop="text">WhatsApp +91 91472 46587, call the same number, email connect@ky21c.org, or fill the enquiry form below.</p>
+                </div>
+              </details>
+              <details class="group py-4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <summary class="cursor-pointer list-none font-display text-xl text-cream marker:content-none [&::-webkit-details-marker]:hidden" itemprop="name">
+                  <span class="flex items-center justify-between gap-4">Where are you located?<span class="text-gold transition group-open:rotate-45" aria-hidden="true">+</span></span>
+                </summary>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <p class="mt-3 text-sm leading-relaxed text-mist/75" itemprop="text">Shop No. 127, Downtown Mall, Uniworld City Commercial Complex, New Town, Kolkata, West Bengal 700156.</p>
+                </div>
+              </details>
+              <details class="group py-4" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <summary class="cursor-pointer list-none font-display text-xl text-cream marker:content-none [&::-webkit-details-marker]:hidden" itemprop="name">
+                  <span class="flex items-center justify-between gap-4">Do you also do office plants?<span class="text-gold transition group-open:rotate-45" aria-hidden="true">+</span></span>
+                </summary>
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <p class="mt-3 text-sm leading-relaxed text-mist/75" itemprop="text">Yes. Vātika’s Office Greenery Project starts at ₹10,000 — ask when you enquire about the studio.</p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section-pad pt-0" aria-labelledby="contact-heading">
+        <div class="wrap">
+          <div class="panel reveal">
+            <p class="eyebrow" data-i18n="contact_eyebrow">Contact</p>
+            <h2 id="contact-heading" class="text-3xl sm:text-4xl" data-i18n="contact_title">Reserve your slot</h2>
+            <p class="lede" data-i18n="contact_lede">Book Free Consultation — tell us your date, duration, and what you’re creating.</p>
+
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a class="btn btn-primary" href="https://wa.me/919147246587?text=Hi%2C%20I%27d%20like%20to%20book%20Biophilic%20Studio" target="_blank" rel="noopener noreferrer">WhatsApp +91 91472 46587</a>
+              <a class="btn btn-secondary" href="tel:+919147246587">Call now</a>
+              <a class="btn btn-secondary" href="mailto:connect@ky21c.org?subject=Biophilic%20Studio%20enquiry">Email us</a>
+            </div>
+
+            <div class="mt-10 grid gap-4 text-sm text-mist/80 sm:grid-cols-2">
+              <p><strong class="text-cream">Hours:</strong> 8:30 AM – 7:00 PM</p>
+              <p><strong class="text-cream">Email:</strong> <a class="underline decoration-gold/50 underline-offset-2 hover:text-gold-bright" href="mailto:connect@ky21c.org">connect@ky21c.org</a></p>
+              <p class="sm:col-span-2"><strong class="text-cream">Address:</strong> Shop No. 127, Downtown Mall, New Town, Kolkata, West Bengal 700156</p>
+            </div>
+
+            <div class="mt-10">
+              <h3 class="text-2xl">Fill Enquiry Form</h3>
+              <p class="mt-2 text-sm text-mist/70">
+                Share your details below. After submit, check your email for a copy — you can download or print it.
+                Studio copy goes to <span class="text-cream">connect@ky21c.org</span>.
+              </p>
+              <div class="form-shell mt-5">
+                <iframe
+                  id="enquiry-google-form"
+                  title="Biophilic Studio enquiry form"
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSd0h8d5PgoC9ov9nOaEWz28xPliAnVScFntBrZxCQ1yuYYPgA/viewform?embedded=true"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  class="block w-full border-0"
+                  style="min-height: 1100px;"
+                >Loading…</iframe>
+              </div>
+              <p class="mt-4 text-sm text-mist/65">
+                Form not loading?
+                <a
+                  class="text-gold-bright underline-offset-2 hover:underline"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSd0h8d5PgoC9ov9nOaEWz28xPliAnVScFntBrZxCQ1yuYYPgA/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Open enquiry form in a new tab →</a>
+              </p>
+            </div>
+
+            <p class="mt-6">
+              <a class="text-sm text-gold-bright underline-offset-2 hover:underline" href="https://www.google.com/maps/search/?api=1&amp;query=Downtown+Mall+Newtown+Kolkata" target="_blank" rel="noopener noreferrer">Find Downtown Mall on Maps →</a>
             </p>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="wrap footer-inner">
-        <img src="images/logo-karmyog-vatika.png" alt="" width="40" height="40">
-        <div>
-          <p class="footer-brand">karmyog Vātika · Biophilic Studio</p>
-          <p>Shop No. 127, Downtown Mall, New Town, Kolkata · <a href="tel:+919147246587">+91 91472 46587</a></p>
+    <!-- FOOTER -->
+    <footer class="border-t border-gold/30 bg-forest-deep/90">
+      <div class="wrap section-pad !py-12">
+        <div class="grid gap-10 md:grid-cols-[1.2fr_1fr_1fr]">
+          <div>
+            <div class="flex items-center gap-3">
+              <img src="images/logo-karmyog-vatika.png" alt="" width="40" height="40" class="h-10 w-10 object-contain" loading="lazy">
+              <p class="font-display text-xl text-cream">karmyog Vātika · Biophilic Studio</p>
+            </div>
+            <p class="mt-4 max-w-sm text-sm leading-relaxed text-mist/70">
+              Nature-soaked studio rental for podcasts, meetings, and content creation in New Town, Kolkata.
+            </p>
+          </div>
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-gold-bright">Contact</p>
+            <ul class="mt-4 space-y-2 text-sm text-mist/80">
+              <li><a class="hover:text-gold-bright" href="tel:+919147246587">Phone: +91 91472 46587</a></li>
+              <li><a class="hover:text-gold-bright" href="https://wa.me/919147246587" target="_blank" rel="noopener noreferrer">WhatsApp: +91 91472 46587</a></li>
+              <li><a class="hover:text-gold-bright" href="mailto:connect@ky21c.org">Email: connect@ky21c.org</a></li>
+              <li>Shop No. 127, Downtown Mall,<br>New Town, Kolkata 700156</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-gold-bright">Explore</p>
+            <ul class="mt-4 space-y-2 text-sm text-mist/80">
+              <li><a class="hover:text-gold-bright" href="#services">Services</a></li>
+              <li><a class="hover:text-gold-bright" href="#rates">Rates</a></li>
+              <li><a class="hover:text-gold-bright" href="#faq">FAQ</a></li>
+              <li><a class="hover:text-gold-bright" href="#contact">Book</a></li>
+              <li><a class="hover:text-gold-bright" href="https://www.vatika.ai/" target="_blank" rel="noopener noreferrer">vatika.ai</a></li>
+              <li><a class="hover:text-gold-bright" href="https://www.google.com/maps/search/?api=1&amp;query=Downtown+Mall+Newtown+Kolkata" target="_blank" rel="noopener noreferrer">Google Map</a></li>
+            </ul>
+            <p class="mt-6 text-xs font-semibold uppercase tracking-[0.18em] text-gold-bright">Social</p>
+            <ul class="mt-3 flex flex-wrap gap-3 text-sm text-mist/80">
+              <li><a class="hover:text-gold-bright" href="https://wa.me/919147246587" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp</a></li>
+              <li><span class="text-mist/45" title="Add Instagram URL when available">Instagram</span></li>
+              <li><span class="text-mist/45" title="Add Facebook URL when available">Facebook</span></li>
+              <li><span class="text-mist/45" title="Add LinkedIn URL when available">LinkedIn</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-10 flex flex-col gap-2 border-t border-gold/20 pt-6 text-xs text-mist/55 sm:flex-row sm:items-center sm:justify-between">
+          <p>© <span id="year">2026</span> karmyog Vātika · Biophilic Studio</p>
+          <p>Downtown Mall · New Town · Kolkata</p>
         </div>
       </div>
     </footer>
   </div>
 
-  <div class="lightbox" id="lightbox" hidden>
-    <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
-    <img src="" alt="">
+  <!-- Lightbox -->
+  <div class="lightbox fixed inset-0 z-[80] hidden items-center justify-center bg-forest-deep/92 p-4 backdrop-blur-sm" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image preview">
+    <button type="button" class="lightbox-close absolute right-4 top-4 rounded-sm border border-gold/40 px-3 py-1 text-2xl leading-none text-cream hover:border-gold" aria-label="Close">&times;</button>
+    <img src="" alt="" class="max-h-[88vh] max-w-full rounded-sm object-contain shadow-lift">
   </div>
 
-  <script src="script.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

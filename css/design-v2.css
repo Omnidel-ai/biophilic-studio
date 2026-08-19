@@ -1,0 +1,371 @@
+/* Design refresh v2 — style/UI only. Logo + copy unchanged.
+   Direction: editorial biophilic studio — quieter chrome, stronger type. */
+
+:root {
+  --ink: #f3efe6;
+  --ink-soft: rgba(243, 239, 230, 0.82);
+  --ink-mute: rgba(243, 239, 230, 0.68);
+  --forest-deep: #0c1f16;
+  --forest: #163528;
+  --moss: #2a5640;
+  --gold: #c9a65a;
+  --gold-bright: #e2c57a;
+  --amber: #b8863a;
+  --line: rgba(201, 166, 90, 0.28);
+  --panel: rgba(12, 31, 22, 0.72);
+  --hero-overlay-top: rgba(8, 20, 14, 0.82);
+  --hero-overlay-mid: rgba(12, 31, 22, 0.48);
+  --hero-overlay-low: rgba(8, 20, 14, 0.9);
+  --line-bn: 1.8;
+  --font-display: "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "DM Sans", "Outfit", system-ui, sans-serif;
+  --font-bn: "Noto Sans Bengali", "DM Sans", system-ui, sans-serif;
+}
+
+/* Type system */
+body {
+  font-family: var(--font-sans) !important;
+  color: var(--ink) !important;
+  letter-spacing: 0.005em;
+}
+
+h1, h2, h3,
+.font-display,
+.brand,
+.brand span,
+.hero-brand-line,
+.hero-heading,
+.rate-price,
+.eyebrow {
+  font-family: var(--font-display) !important;
+}
+
+.hero-heading,
+h1, h2, h3 {
+  font-optical-sizing: auto;
+  font-weight: 550 !important;
+  letter-spacing: -0.01em !important;
+  color: var(--ink) !important;
+}
+
+.lede,
+.hero-support,
+p, li {
+  color: var(--ink-soft);
+}
+
+/* Background photography — keep identity, improve separation */
+.page-bg {
+  background-position: 74% top !important;
+  transform: scale(1.02);
+  transform-origin: 80% center;
+}
+
+@media (min-width: 768px) {
+  .page-bg {
+    background-position: 82% center !important;
+  }
+}
+
+.page-scrim-main {
+  background:
+    linear-gradient(
+      100deg,
+      rgba(8, 20, 14, 0.92) 0%,
+      rgba(8, 20, 14, 0.78) 28%,
+      rgba(12, 31, 22, 0.45) 52%,
+      rgba(12, 31, 22, 0.22) 72%,
+      rgba(12, 31, 22, 0.35) 100%
+    ),
+    linear-gradient(
+      180deg,
+      var(--hero-overlay-top) 0%,
+      var(--hero-overlay-mid) 45%,
+      var(--hero-overlay-low) 100%
+    ) !important;
+}
+
+/* Hero text: editorial wash, not a heavy card */
+.hero-text-safe {
+  max-width: 40rem;
+  padding: clamp(0.25rem, 1vw, 0.5rem) clamp(0.25rem, 1.5vw, 0.75rem)
+    clamp(0.5rem, 2vw, 1rem);
+  border-radius: 0;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+  border-left: 2px solid rgba(201, 166, 90, 0.55);
+  padding-left: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.hero-section {
+  min-height: 100svh;
+  padding-top: clamp(7rem, 14vh, 9rem);
+  padding-bottom: clamp(3.5rem, 9vh, 6rem);
+}
+
+.hero-brand-line {
+  font-size: clamp(1.15rem, 2.4vw, 1.65rem) !important;
+  letter-spacing: 0.16em !important;
+  text-transform: lowercase;
+  color: var(--gold-bright) !important;
+}
+
+.hero-heading {
+  margin-top: clamp(0.55rem, 1.2vw, 0.85rem) !important;
+  font-size: clamp(2.55rem, 7vw, 4.6rem) !important;
+  line-height: 1.05 !important;
+  max-width: 11ch;
+  text-wrap: balance;
+}
+
+.hero-support {
+  margin-top: clamp(1rem, 2.2vw, 1.5rem) !important;
+  font-size: clamp(1.02rem, 1.6vw, 1.2rem) !important;
+  line-height: 1.7 !important;
+  max-width: 32em;
+  color: var(--ink-soft) !important;
+}
+
+.hero-cta {
+  margin-top: clamp(1.5rem, 3.2vw, 2.25rem) !important;
+  gap: 0.85rem !important;
+}
+
+/* Header — quieter glass */
+.site-header {
+  background: rgba(8, 20, 14, 0.66) !important;
+  border-bottom-color: var(--line) !important;
+  backdrop-filter: blur(16px) saturate(1.15);
+  -webkit-backdrop-filter: blur(16px) saturate(1.15);
+}
+
+.site-header .brand {
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  font-size: 0.84rem !important;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-mute) !important;
+}
+
+.nav-link:hover {
+  color: var(--gold-bright) !important;
+}
+
+.lang-toggle {
+  border-color: var(--line) !important;
+  background: rgba(8, 20, 14, 0.45) !important;
+}
+
+.lang-toggle button[aria-pressed="true"] {
+  background: linear-gradient(135deg, var(--gold), var(--amber)) !important;
+  color: var(--forest-deep) !important;
+}
+
+/* Buttons — sharper, less generic pill feel */
+.btn {
+  border-radius: 2px !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease,
+    border-color 0.25s ease !important;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold-bright), var(--amber)) !important;
+  color: #0c1f16 !important;
+  box-shadow: 0 10px 28px -14px rgba(184, 134, 58, 0.65) !important;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px -12px rgba(184, 134, 58, 0.55) !important;
+}
+
+.btn-secondary {
+  background: rgba(8, 20, 14, 0.35) !important;
+  border-color: var(--line) !important;
+  color: var(--ink) !important;
+}
+
+.btn-secondary:hover {
+  border-color: var(--gold) !important;
+  background: rgba(8, 20, 14, 0.55) !important;
+}
+
+/* Panels — lighter chrome, more editorial */
+.panel {
+  background: rgba(12, 31, 22, 0.7) !important;
+  border-color: var(--line) !important;
+  border-radius: 2px !important;
+  box-shadow: 0 30px 60px -40px rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(18px) saturate(1.1);
+  -webkit-backdrop-filter: blur(18px) saturate(1.1);
+}
+
+.eyebrow {
+  color: var(--gold-bright) !important;
+  letter-spacing: 0.22em !important;
+  font-size: 0.68rem !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+}
+
+.eyebrow::before {
+  background: var(--gold) !important;
+  width: 1.4rem !important;
+}
+
+/* Services articles — clearer rhythm */
+#services article h3,
+#why h3,
+#process h3 {
+  font-size: clamp(1.35rem, 2vw, 1.65rem) !important;
+}
+
+#services article ul li {
+  position: relative;
+  padding-left: 0.9rem;
+}
+
+#services article ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: 0.8;
+}
+
+/* Rates — less boxed, more price-list editorial */
+#rates .rounded-sm {
+  border-radius: 2px !important;
+  background: rgba(8, 20, 14, 0.4) !important;
+  border-color: var(--line) !important;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+#rates .rounded-sm:hover {
+  border-color: rgba(201, 166, 90, 0.55);
+  transform: translateY(-2px);
+}
+
+#rates .font-display.text-4xl,
+#rates .text-4xl {
+  font-family: var(--font-display) !important;
+  font-size: clamp(2rem, 3.5vw, 2.55rem) !important;
+  color: var(--gold-bright) !important;
+  letter-spacing: -0.02em;
+}
+
+/* Gallery — quieter frames, stronger hover */
+.g-item {
+  border-radius: 2px !important;
+  border-color: rgba(201, 166, 90, 0.18) !important;
+  overflow: hidden;
+}
+
+.g-item img {
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1), filter 0.4s ease !important;
+  filter: saturate(0.92) contrast(1.03);
+}
+
+.g-item:hover img,
+.g-item:focus-visible img {
+  transform: scale(1.04) !important;
+  filter: saturate(1.05) contrast(1.05);
+}
+
+/* FAQ details */
+#faq details summary {
+  transition: color 0.2s ease;
+}
+
+#faq details summary:hover {
+  color: var(--gold-bright) !important;
+}
+
+/* Form shell */
+.form-shell {
+  border-radius: 4px !important;
+  border-color: var(--line) !important;
+  background: rgba(245, 237, 216, 0.96) !important;
+  box-shadow: 0 24px 50px -30px rgba(0, 0, 0, 0.55) !important;
+}
+
+/* Footer */
+footer {
+  background: rgba(8, 20, 14, 0.94) !important;
+  border-top-color: var(--line) !important;
+}
+
+/* Reveal motion — slightly softer */
+.reveal {
+  transition-duration: 0.85s !important;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+/* Bengali */
+html[lang="bn"] body,
+html[lang="bn"] .hero-support,
+html[lang="bn"] .lede,
+html[lang="bn"] p,
+html[lang="bn"] li,
+html[lang="bn"] .nav-link,
+html[lang="bn"] .btn,
+html[lang="bn"] .eyebrow {
+  font-family: var(--font-bn) !important;
+  line-height: var(--line-bn);
+}
+
+html[lang="bn"] h1,
+html[lang="bn"] h2,
+html[lang="bn"] h3,
+html[lang="bn"] .font-display,
+html[lang="bn"] .brand,
+html[lang="bn"] .brand span,
+html[lang="bn"] .hero-heading,
+html[lang="bn"] .hero-brand-line {
+  font-family: var(--font-bn) !important;
+  line-height: 1.3;
+  letter-spacing: 0 !important;
+}
+
+html[lang="bn"] .hero-heading {
+  max-width: 12ch;
+  font-size: clamp(2.2rem, 6vw, 3.6rem) !important;
+}
+
+html[lang="bn"] .btn,
+html[lang="bn"] .nav-link {
+  text-transform: none;
+  letter-spacing: 0.02em !important;
+}
+
+/* Section breathing room */
+.section-pad {
+  padding-top: clamp(3.5rem, 8vw, 6rem) !important;
+  padding-bottom: clamp(3.5rem, 8vw, 6rem) !important;
+}
+
+/* Image frames in about/benefits — quieter */
+.overflow-hidden.rounded-md {
+  border-radius: 2px !important;
+  border-color: var(--line) !important;
+}
+
+/* Focus */
+:focus-visible {
+  outline-color: var(--gold-bright) !important;
+}

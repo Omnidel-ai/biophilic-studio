@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://biophilic-studio.vercel.app/sitemap.xml

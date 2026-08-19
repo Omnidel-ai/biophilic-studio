@@ -1,0 +1,253 @@
+/* UI/UX review fixes — Bengali readability + background treatment
+   Preferred approach: stronger responsive gradient behind text (Option 2)
+   + flexible section growth + Bengali typography. */
+
+:root {
+  --hero-overlay-top: rgba(10, 24, 16, 0.78);
+  --hero-overlay-mid: rgba(15, 36, 25, 0.52);
+  --hero-overlay-low: rgba(10, 24, 16, 0.88);
+  --text-safe: rgba(10, 24, 16, 0.55);
+  --line-bn: 1.75;
+}
+
+/* --- Background: Option 2 gradient + softer photo under text --- */
+.page-bg {
+  background-position: 72% top !important;
+  filter: none;
+}
+
+@media (min-width: 768px) {
+  .page-bg {
+    background-position: 78% center !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-bg {
+    background-position: 68% top !important;
+  }
+}
+
+/* Stronger left/text-side gradient; lighter on photo side */
+.page-scrim-main {
+  background:
+    linear-gradient(
+      105deg,
+      rgba(10, 24, 16, 0.88) 0%,
+      rgba(10, 24, 16, 0.72) 34%,
+      rgba(15, 36, 25, 0.42) 58%,
+      rgba(15, 36, 25, 0.28) 100%
+    ),
+    linear-gradient(
+      180deg,
+      var(--hero-overlay-top) 0%,
+      var(--hero-overlay-mid) 42%,
+      var(--hero-overlay-low) 100%
+    ) !important;
+}
+
+/* Subtle blur only behind hero text column (does not blur whole photo) */
+.hero-text-safe {
+  position: relative;
+  max-width: 38rem;
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  border-radius: 0.35rem;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 24, 16, 0.58) 0%,
+    rgba(10, 24, 16, 0.28) 70%,
+    rgba(10, 24, 16, 0.12) 100%
+  );
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 18px 40px -28px rgba(0, 0, 0, 0.55);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .hero-text-safe {
+    background: rgba(10, 24, 16, 0.72);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-text-safe {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(10, 24, 16, 0.72);
+  }
+}
+
+/* --- Flexible hero: grow with content / zoom --- */
+.hero-section {
+  min-height: 100svh;
+  height: auto !important;
+  max-height: none !important;
+  padding-top: clamp(6.5rem, 12vh, 8.5rem);
+  padding-bottom: clamp(3rem, 8vh, 5.5rem);
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    align-items: flex-end;
+  }
+}
+
+.hero-brand-line {
+  margin-top: 0.35rem;
+}
+
+.hero-heading {
+  margin-top: clamp(0.65rem, 1.4vw, 1rem) !important;
+  line-height: 1.12 !important;
+  font-size: clamp(2.4rem, 6.2vw, 4.25rem) !important;
+  max-width: 16ch;
+}
+
+.hero-support {
+  margin-top: clamp(0.9rem, 2vw, 1.35rem) !important;
+  line-height: 1.65 !important;
+  max-width: 34em;
+}
+
+.hero-cta {
+  margin-top: clamp(1.35rem, 3vw, 2rem) !important;
+  gap: 0.75rem !important;
+  flex-wrap: wrap;
+}
+
+/* CTAs grow with longer labels (Bengali) */
+.btn {
+  white-space: normal;
+  text-align: center;
+  min-height: 2.85rem;
+  padding-inline: clamp(1.1rem, 2.5vw, 1.5rem) !important;
+  padding-block: clamp(0.7rem, 1.4vw, 0.9rem) !important;
+  max-width: 100%;
+}
+
+/* --- Header: wrap safely at larger text sizes --- */
+.site-header nav {
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+  min-height: 3.5rem;
+}
+
+.site-header .brand span {
+  line-height: 1.25;
+  max-width: min(52vw, 14rem);
+}
+
+#nav-toggle {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+}
+
+#nav-menu {
+  max-height: min(80vh, 32rem);
+  overflow-y: auto;
+}
+
+#nav-menu .btn-primary {
+  width: fit-content;
+  max-width: 100%;
+}
+
+/* --- Sections: content-driven height --- */
+.section-pad,
+section[id] {
+  height: auto !important;
+  max-height: none !important;
+}
+
+.panel {
+  overflow: visible;
+}
+
+/* --- Bengali typography --- */
+html[lang="bn"] body,
+html[lang="bn"] .hero-support,
+html[lang="bn"] .lede,
+html[lang="bn"] p,
+html[lang="bn"] li,
+html[lang="bn"] .nav-link,
+html[lang="bn"] .btn {
+  font-family: "Noto Sans Bengali", "Outfit", system-ui, sans-serif;
+  line-height: var(--line-bn);
+  letter-spacing: 0.01em;
+  word-break: break-word;
+}
+
+html[lang="bn"] h1,
+html[lang="bn"] h2,
+html[lang="bn"] h3,
+html[lang="bn"] .font-display,
+html[lang="bn"] .brand,
+html[lang="bn"] .brand span {
+  font-family: "Noto Sans Bengali", "Cormorant Garamond", Georgia, serif;
+  line-height: 1.28;
+  letter-spacing: 0.01em;
+}
+
+html[lang="bn"] .hero-heading {
+  max-width: 12ch;
+  line-height: 1.22 !important;
+}
+
+html[lang="bn"] .eyebrow {
+  letter-spacing: 0.12em;
+}
+
+html[lang="bn"] .lede {
+  line-height: 1.8;
+}
+
+/* Language toggle */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  border: 1px solid rgba(212, 181, 106, 0.35);
+  border-radius: 0.25rem;
+  padding: 0.15rem;
+  background: rgba(15, 36, 25, 0.55);
+}
+
+.lang-toggle button {
+  border: 0;
+  background: transparent;
+  color: rgba(238, 245, 238, 0.75);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 0.4rem 0.65rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  min-height: 2rem;
+}
+
+.lang-toggle button[aria-pressed="true"] {
+  background: linear-gradient(135deg, #d4b56a, #c48a3a);
+  color: #0f2419;
+}
+
+/* Zoom / large text: keep hero readable */
+@media (min-resolution: 1.25dppx) {
+  .hero-text-safe {
+    background: linear-gradient(
+      135deg,
+      rgba(10, 24, 16, 0.62) 0%,
+      rgba(10, 24, 16, 0.32) 100%
+    );
+  }
+}
+
+/* Prevent accidental horizontal scroll from long Bengali strings */
+html,
+body {
+  overflow-x: clip;
+}
+
+.wrap {
+  max-width: 72rem;
+}
