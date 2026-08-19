@@ -2,7 +2,7 @@
 
 Promotional site for **Biophilic Studio** at Shop No. 127, Downtown Mall, New Town, Kolkata — a karmyog Vātika space for podcasts, meetings, and content creation.
 
-**Live:** https://biophilic-vatika.vercel.app/
+**Live:** https://biophilic-studio.vercel.app/
 
 ## Preview locally
 
