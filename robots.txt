@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://biophilic-studio.vercel.app/sitemap.xml
+Sitemap: https://biophilic-vatika.vercel.app/sitemap.xml
