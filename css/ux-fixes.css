@@ -204,6 +204,8 @@ html[lang="bn"] .lede {
 
 /* Language toggle */
 .lang-toggle {
+  position: relative;
+  z-index: 60;
   display: inline-flex;
   align-items: center;
   gap: 0.15rem;
@@ -211,6 +213,7 @@ html[lang="bn"] .lede {
   border-radius: 0.25rem;
   padding: 0.15rem;
   background: rgba(15, 36, 25, 0.55);
+  pointer-events: auto;
 }
 
 .lang-toggle button {
@@ -220,10 +223,13 @@ html[lang="bn"] .lede {
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.06em;
-  padding: 0.4rem 0.65rem;
+  padding: 0.45rem 0.75rem;
   border-radius: 0.2rem;
   cursor: pointer;
-  min-height: 2rem;
+  min-height: 2.25rem;
+  min-width: 2.5rem;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .lang-toggle button[aria-pressed="true"] {
